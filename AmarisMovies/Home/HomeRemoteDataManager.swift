@@ -20,7 +20,7 @@ class HomeRemoteDataManager:HomeRemoteDataManagerInputProtocol {
         let session = URLSession.shared
         
         //Create request URL
-        var request = URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=719d2170c4c70e54721f71c02884924d&language=en-US&page=1")!)
+        var request = URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/popular?api_key={key}&language=en-US&page=1")!)
         
         // Call Api REST
         request.httpMethod = "GET"
