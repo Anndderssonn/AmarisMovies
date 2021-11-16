@@ -22,12 +22,19 @@ extension HomePresenter: HomePresenterProtocol {
     func viewDidLoad() {
         // Call to Interactor for get data
         interactor?.interactorGetData()
+        view?.loadActivity()
+    }
+    
+    func showDetailPopularMovieView(with dataPopularMovie: String) {
+        // Call to Wireframe
+        wireFrame?.presentNewViewDetailPopularMovies(from: view!, withDataPopularMovie: dataPopularMovie)
     }
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {
     // TODO: implement interactor output methods
     func interactorPushDataPopularPresenter(receivedDataPopularMovies: [String]) {
+        view?.stopAndHideActivity()
         view?.presenterPushDataView(receivedPopularMovieData: receivedDataPopularMovies)
     }
 }

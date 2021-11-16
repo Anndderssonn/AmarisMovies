@@ -13,11 +13,15 @@ protocol HomeViewProtocol: class {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
     func presenterPushDataView(receivedPopularMovieData: [String])
+    func loadActivity()
+    func stopAndHideActivity()
 }
 
 protocol HomeWireFrameProtocol: class {
     // PRESENTER -> WIREFRAME
     static func createHomeModule() -> UIViewController
+    
+    func presentNewViewDetailPopularMovies(from view: HomeViewProtocol, withDataPopularMovie: String)
 }
 
 protocol HomePresenterProtocol: class {
@@ -27,6 +31,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func showDetailPopularMovieView(with dataPopularMovie: String)
 }
 
 protocol HomeInteractorOutputProtocol: class {

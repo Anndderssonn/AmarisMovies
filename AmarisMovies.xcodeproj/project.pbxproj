@@ -24,6 +24,14 @@
 		631865BD2742C1D400272781 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B62742C1D400272781 /* HomeWireFrame.swift */; };
 		631865C22742CCBF00272781 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631865C12742CCBF00272781 /* HomeView.storyboard */; };
 		631865C42742E38300272781 /* PopularMoviesURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865C32742E38300272781 /* PopularMoviesURL.swift */; };
+		63F713F627442E50001712A6 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713EF27442E50001712A6 /* DetailPresenter.swift */; };
+		63F713F727442E50001712A6 /* DetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F027442E50001712A6 /* DetailLocalDataManager.swift */; };
+		63F713F827442E50001712A6 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F127442E50001712A6 /* DetailProtocols.swift */; };
+		63F713F927442E50001712A6 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F227442E50001712A6 /* DetailInteractor.swift */; };
+		63F713FA27442E50001712A6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F327442E50001712A6 /* DetailView.swift */; };
+		63F713FB27442E50001712A6 /* DetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F427442E50001712A6 /* DetailRemoteDataManager.swift */; };
+		63F713FC27442E50001712A6 /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F713F527442E50001712A6 /* DetailWireFrame.swift */; };
+		63F713FF2744311E001712A6 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F713FE2744311E001712A6 /* DetailView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,14 @@
 		631865B62742C1D400272781 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
 		631865C12742CCBF00272781 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		631865C32742E38300272781 /* PopularMoviesURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesURL.swift; sourceTree = "<group>"; };
+		63F713EF27442E50001712A6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		63F713F027442E50001712A6 /* DetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalDataManager.swift; sourceTree = "<group>"; };
+		63F713F127442E50001712A6 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		63F713F227442E50001712A6 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		63F713F327442E50001712A6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		63F713F427442E50001712A6 /* DetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		63F713F527442E50001712A6 /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
+		63F713FE2744311E001712A6 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				631865BE2742C20300272781 /* Home */,
+				63F713FD27442E66001712A6 /* Detail */,
 				6318656B2742A44700272781 /* AppDelegate.swift */,
 				6318656F2742A44700272781 /* ViewController.swift */,
 				631865772742A44900272781 /* Assets.xcassets */,
@@ -160,6 +177,21 @@
 				631865C32742E38300272781 /* PopularMoviesURL.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		63F713FD27442E66001712A6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				63F713F327442E50001712A6 /* DetailView.swift */,
+				63F713FE2744311E001712A6 /* DetailView.storyboard */,
+				63F713EF27442E50001712A6 /* DetailPresenter.swift */,
+				63F713F027442E50001712A6 /* DetailLocalDataManager.swift */,
+				63F713F127442E50001712A6 /* DetailProtocols.swift */,
+				63F713F227442E50001712A6 /* DetailInteractor.swift */,
+				63F713F427442E50001712A6 /* DetailRemoteDataManager.swift */,
+				63F713F527442E50001712A6 /* DetailWireFrame.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +305,7 @@
 			files = (
 				6318657B2742A44900272781 /* LaunchScreen.storyboard in Resources */,
 				631865782742A44900272781 /* Assets.xcassets in Resources */,
+				63F713FF2744311E001712A6 /* DetailView.storyboard in Resources */,
 				631865C22742CCBF00272781 /* HomeView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,16 +332,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				631865702742A44700272781 /* ViewController.swift in Sources */,
+				63F713F727442E50001712A6 /* DetailLocalDataManager.swift in Sources */,
 				631865762742A44700272781 /* AmarisMovies.xcdatamodeld in Sources */,
 				631865B82742C1D400272781 /* HomeLocalDataManager.swift in Sources */,
+				63F713FB27442E50001712A6 /* DetailRemoteDataManager.swift in Sources */,
 				6318656C2742A44700272781 /* AppDelegate.swift in Sources */,
 				631865B92742C1D400272781 /* HomeProtocols.swift in Sources */,
+				63F713F927442E50001712A6 /* DetailInteractor.swift in Sources */,
 				631865BB2742C1D400272781 /* HomeView.swift in Sources */,
 				631865C42742E38300272781 /* PopularMoviesURL.swift in Sources */,
+				63F713FA27442E50001712A6 /* DetailView.swift in Sources */,
 				631865BC2742C1D400272781 /* HomeRemoteDataManager.swift in Sources */,
 				631865B72742C1D400272781 /* HomePresenter.swift in Sources */,
+				63F713F827442E50001712A6 /* DetailProtocols.swift in Sources */,
 				631865BA2742C1D400272781 /* HomeInteractor.swift in Sources */,
+				63F713FC27442E50001712A6 /* DetailWireFrame.swift in Sources */,
 				631865BD2742C1D400272781 /* HomeWireFrame.swift in Sources */,
+				63F713F627442E50001712A6 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

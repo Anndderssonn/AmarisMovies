@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class HomeWireFrame: HomeWireFrameProtocol {
-
     class func createHomeModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "navigation")
         if let view = navController.children.first as? HomeView {
@@ -38,4 +37,11 @@ class HomeWireFrame: HomeWireFrameProtocol {
         return UIStoryboard(name: "HomeView", bundle: Bundle.main)
     }
     
+    func presentNewViewDetailPopularMovies(from view: HomeViewProtocol, withDataPopularMovie: String) {
+        // Create new module and instance
+        let newDetailView = DetailWireFrame.createDetailModule(with: withDataPopularMovie)
+        if let newViewPopularMovieDetail = view as? UIViewController {
+            newViewPopularMovieDetail.navigationController?.pushViewController(newDetailView, animated: true)
+        }
+    }
 }

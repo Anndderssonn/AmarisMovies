@@ -35,6 +35,19 @@ extension HomeView: HomeViewProtocol {
             self.tableViewHome.reloadData()
         }
     }
+    
+    func loadActivity() {
+        DispatchQueue.main.async {
+            self.activityHome.startAnimating()
+        }
+    }
+    
+    func stopAndHideActivity() {
+        DispatchQueue.main.async {
+            self.activityHome.stopAnimating()
+            self.activityHome.hidesWhenStopped = true
+        }
+    }
 }
 
 extension HomeView: UITableViewDataSource {
@@ -52,5 +65,7 @@ extension HomeView: UITableViewDataSource {
 }
 
 extension HomeView: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showDetailPopularMovieView(with: arrayViewPopularMoviesURL[indexPath.row])
+    }
 }
