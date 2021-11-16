@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6318656C2742A44700272781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318656B2742A44700272781 /* AppDelegate.swift */; };
+		631865702742A44700272781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318656F2742A44700272781 /* ViewController.swift */; };
+		631865762742A44700272781 /* AmarisMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 631865742742A44700272781 /* AmarisMovies.xcdatamodeld */; };
+		631865782742A44900272781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631865772742A44900272781 /* Assets.xcassets */; };
+		6318657B2742A44900272781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631865792742A44900272781 /* LaunchScreen.storyboard */; };
+		631865862742A44900272781 /* AmarisMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865852742A44900272781 /* AmarisMoviesTests.swift */; };
+		631865912742A44900272781 /* AmarisMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865902742A44900272781 /* AmarisMoviesUITests.swift */; };
+		631865A02742AF0100272781 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6318659F2742AF0100272781 /* Alamofire */; };
+		631865B72742C1D400272781 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B02742C1D400272781 /* HomePresenter.swift */; };
+		631865B82742C1D400272781 /* HomeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B12742C1D400272781 /* HomeLocalDataManager.swift */; };
+		631865B92742C1D400272781 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B22742C1D400272781 /* HomeProtocols.swift */; };
+		631865BA2742C1D400272781 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B32742C1D400272781 /* HomeInteractor.swift */; };
+		631865BB2742C1D400272781 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B42742C1D400272781 /* HomeView.swift */; };
+		631865BC2742C1D400272781 /* HomeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B52742C1D400272781 /* HomeRemoteDataManager.swift */; };
+		631865BD2742C1D400272781 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865B62742C1D400272781 /* HomeWireFrame.swift */; };
+		631865C22742CCBF00272781 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631865C12742CCBF00272781 /* HomeView.storyboard */; };
+		631865C42742E38300272781 /* PopularMoviesURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631865C32742E38300272781 /* PopularMoviesURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		631865822742A44900272781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 631865602742A44700272781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 631865672742A44700272781;
+			remoteInfo = AmarisMovies;
+		};
+		6318658D2742A44900272781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 631865602742A44700272781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 631865672742A44700272781;
+			remoteInfo = AmarisMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		631865682742A44700272781 /* AmarisMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmarisMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6318656B2742A44700272781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6318656F2742A44700272781 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		631865752742A44700272781 /* AmarisMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AmarisMovies.xcdatamodel; sourceTree = "<group>"; };
+		631865772742A44900272781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6318657A2742A44900272781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6318657C2742A44900272781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631865812742A44900272781 /* AmarisMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmarisMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		631865852742A44900272781 /* AmarisMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmarisMoviesTests.swift; sourceTree = "<group>"; };
+		631865872742A44900272781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6318658C2742A44900272781 /* AmarisMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmarisMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		631865902742A44900272781 /* AmarisMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmarisMoviesUITests.swift; sourceTree = "<group>"; };
+		631865922742A44900272781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631865B02742C1D400272781 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		631865B12742C1D400272781 /* HomeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataManager.swift; sourceTree = "<group>"; };
+		631865B22742C1D400272781 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		631865B32742C1D400272781 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		631865B42742C1D400272781 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		631865B52742C1D400272781 /* HomeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataManager.swift; sourceTree = "<group>"; };
+		631865B62742C1D400272781 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		631865C12742CCBF00272781 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		631865C32742E38300272781 /* PopularMoviesURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesURL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		631865652742A44700272781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631865A02742AF0100272781 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6318657E2742A44900272781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631865892742A44900272781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6318655F2742A44700272781 = {
+			isa = PBXGroup;
+			children = (
+				6318656A2742A44700272781 /* AmarisMovies */,
+				631865842742A44900272781 /* AmarisMoviesTests */,
+				6318658F2742A44900272781 /* AmarisMoviesUITests */,
+				631865692742A44700272781 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		631865692742A44700272781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				631865682742A44700272781 /* AmarisMovies.app */,
+				631865812742A44900272781 /* AmarisMoviesTests.xctest */,
+				6318658C2742A44900272781 /* AmarisMoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6318656A2742A44700272781 /* AmarisMovies */ = {
+			isa = PBXGroup;
+			children = (
+				631865BE2742C20300272781 /* Home */,
+				6318656B2742A44700272781 /* AppDelegate.swift */,
+				6318656F2742A44700272781 /* ViewController.swift */,
+				631865772742A44900272781 /* Assets.xcassets */,
+				631865792742A44900272781 /* LaunchScreen.storyboard */,
+				6318657C2742A44900272781 /* Info.plist */,
+				631865742742A44700272781 /* AmarisMovies.xcdatamodeld */,
+			);
+			path = AmarisMovies;
+			sourceTree = "<group>";
+		};
+		631865842742A44900272781 /* AmarisMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				631865852742A44900272781 /* AmarisMoviesTests.swift */,
+				631865872742A44900272781 /* Info.plist */,
+			);
+			path = AmarisMoviesTests;
+			sourceTree = "<group>";
+		};
+		6318658F2742A44900272781 /* AmarisMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				631865902742A44900272781 /* AmarisMoviesUITests.swift */,
+				631865922742A44900272781 /* Info.plist */,
+			);
+			path = AmarisMoviesUITests;
+			sourceTree = "<group>";
+		};
+		631865BE2742C20300272781 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				631865B42742C1D400272781 /* HomeView.swift */,
+				631865C12742CCBF00272781 /* HomeView.storyboard */,
+				631865B02742C1D400272781 /* HomePresenter.swift */,
+				631865B12742C1D400272781 /* HomeLocalDataManager.swift */,
+				631865B22742C1D400272781 /* HomeProtocols.swift */,
+				631865B32742C1D400272781 /* HomeInteractor.swift */,
+				631865B52742C1D400272781 /* HomeRemoteDataManager.swift */,
+				631865B62742C1D400272781 /* HomeWireFrame.swift */,
+				631865C32742E38300272781 /* PopularMoviesURL.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		631865672742A44700272781 /* AmarisMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631865952742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMovies" */;
+			buildPhases = (
+				631865642742A44700272781 /* Sources */,
+				631865652742A44700272781 /* Frameworks */,
+				631865662742A44700272781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmarisMovies;
+			packageProductDependencies = (
+				6318659F2742AF0100272781 /* Alamofire */,
+			);
+			productName = AmarisMovies;
+			productReference = 631865682742A44700272781 /* AmarisMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		631865802742A44900272781 /* AmarisMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631865982742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMoviesTests" */;
+			buildPhases = (
+				6318657D2742A44900272781 /* Sources */,
+				6318657E2742A44900272781 /* Frameworks */,
+				6318657F2742A44900272781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				631865832742A44900272781 /* PBXTargetDependency */,
+			);
+			name = AmarisMoviesTests;
+			productName = AmarisMoviesTests;
+			productReference = 631865812742A44900272781 /* AmarisMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6318658B2742A44900272781 /* AmarisMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6318659B2742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMoviesUITests" */;
+			buildPhases = (
+				631865882742A44900272781 /* Sources */,
+				631865892742A44900272781 /* Frameworks */,
+				6318658A2742A44900272781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6318658E2742A44900272781 /* PBXTargetDependency */,
+			);
+			name = AmarisMoviesUITests;
+			productName = AmarisMoviesUITests;
+			productReference = 6318658C2742A44900272781 /* AmarisMoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		631865602742A44700272781 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					631865672742A44700272781 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					631865802742A44900272781 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 631865672742A44700272781;
+					};
+					6318658B2742A44900272781 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 631865672742A44700272781;
+					};
+				};
+			};
+			buildConfigurationList = 631865632742A44700272781 /* Build configuration list for PBXProject "AmarisMovies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6318655F2742A44700272781;
+			packageReferences = (
+				6318659E2742AF0100272781 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 631865692742A44700272781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				631865672742A44700272781 /* AmarisMovies */,
+				631865802742A44900272781 /* AmarisMoviesTests */,
+				6318658B2742A44900272781 /* AmarisMoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		631865662742A44700272781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6318657B2742A44900272781 /* LaunchScreen.storyboard in Resources */,
+				631865782742A44900272781 /* Assets.xcassets in Resources */,
+				631865C22742CCBF00272781 /* HomeView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6318657F2742A44900272781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6318658A2742A44900272781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		631865642742A44700272781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631865702742A44700272781 /* ViewController.swift in Sources */,
+				631865762742A44700272781 /* AmarisMovies.xcdatamodeld in Sources */,
+				631865B82742C1D400272781 /* HomeLocalDataManager.swift in Sources */,
+				6318656C2742A44700272781 /* AppDelegate.swift in Sources */,
+				631865B92742C1D400272781 /* HomeProtocols.swift in Sources */,
+				631865BB2742C1D400272781 /* HomeView.swift in Sources */,
+				631865C42742E38300272781 /* PopularMoviesURL.swift in Sources */,
+				631865BC2742C1D400272781 /* HomeRemoteDataManager.swift in Sources */,
+				631865B72742C1D400272781 /* HomePresenter.swift in Sources */,
+				631865BA2742C1D400272781 /* HomeInteractor.swift in Sources */,
+				631865BD2742C1D400272781 /* HomeWireFrame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6318657D2742A44900272781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631865862742A44900272781 /* AmarisMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631865882742A44900272781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631865912742A44900272781 /* AmarisMoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		631865832742A44900272781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 631865672742A44700272781 /* AmarisMovies */;
+			targetProxy = 631865822742A44900272781 /* PBXContainerItemProxy */;
+		};
+		6318658E2742A44900272781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 631865672742A44700272781 /* AmarisMovies */;
+			targetProxy = 6318658D2742A44900272781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		631865792742A44900272781 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6318657A2742A44900272781 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		631865932742A44900272781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		631865942742A44900272781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		631865962742A44900272781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMovies/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		631865972742A44900272781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMovies/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		631865992742A44900272781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmarisMovies.app/AmarisMovies";
+			};
+			name = Debug;
+		};
+		6318659A2742A44900272781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmarisMovies.app/AmarisMovies";
+			};
+			name = Release;
+		};
+		6318659C2742A44900272781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmarisMovies;
+			};
+			name = Debug;
+		};
+		6318659D2742A44900272781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmarisMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amaris.AmarisMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmarisMovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		631865632742A44700272781 /* Build configuration list for PBXProject "AmarisMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631865932742A44900272781 /* Debug */,
+				631865942742A44900272781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		631865952742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631865962742A44900272781 /* Debug */,
+				631865972742A44900272781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		631865982742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631865992742A44900272781 /* Debug */,
+				6318659A2742A44900272781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6318659B2742A44900272781 /* Build configuration list for PBXNativeTarget "AmarisMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6318659C2742A44900272781 /* Debug */,
+				6318659D2742A44900272781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6318659E2742AF0100272781 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6318659F2742AF0100272781 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6318659E2742AF0100272781 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		631865742742A44700272781 /* AmarisMovies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				631865752742A44700272781 /* AmarisMovies.xcdatamodel */,
+			);
+			currentVersion = 631865752742A44700272781 /* AmarisMovies.xcdatamodel */;
+			path = AmarisMovies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 631865602742A44700272781 /* Project object */;
+}
